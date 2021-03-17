@@ -17,19 +17,21 @@
 using namespace antlr4;
 
 int main(int , const char **) {
-  ANTLRInputStream input("h2.preface {/* 序言前言标题 */margin: 30% 0 0.11111em;}");
-  CSSLexer lexer(&input);
-  CommonTokenStream tokens(&lexer);
+  //ANTLRInputStream input("h2.preface {/* 序言前言标题 */margin: 30% 0 0.11111em;}");
+    
+    ANTLRFileStream input("style.css");
+    CSSLexer lexer(&input);
+    CommonTokenStream tokens(&lexer);
 
-  tokens.fill();
-  for (auto token : tokens.getTokens()) {
-    std::cout << token->toString() << std::endl;
-  }
+    tokens.fill();
+    for (auto token : tokens.getTokens()) {
+        std::cout << token->toString() << std::endl;
+    }
 
-  CSSParser parser(&tokens);
-  // tree::ParseTree* tree = parser.main();
+    CSSParser parser(&tokens);
+    tree::ParseTree* tree = parser.stylesheet();
+    
+    std::cout << tree->toStringTree(&parser) << std::endl << std::endl;
 
-  // std::cout << tree->toStringTree(&parser) << std::endl << std::endl;
-
-  return 0;
+    return 0;
 }

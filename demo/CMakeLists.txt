@@ -1,5 +1,5 @@
 
-add_subdirectory(../Sources ../build)
+add_subdirectory(../Sources ../runtime)
 
 include_directories(
   ${PROJECT_SOURCE_DIR}/Sources/parser
