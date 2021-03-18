@@ -21,8 +21,9 @@ using namespace antlr4;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSURL* path = [[NSBundle mainBundle] URLForResource:@"style" withExtension:@"css"];
     //ANTLRInputStream input("h2.preface {/* 序言前言标题 */margin: 30% 0 0.11111em;}");
-    ANTLRFileStream input("style.css");
+    ANTLRFileStream input(path.path.UTF8String);
     CSSLexer lexer(&input);
     CommonTokenStream tokens(&lexer);
 

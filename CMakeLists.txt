@@ -23,5 +23,9 @@ endif()
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+set(CMAKE_OSX_ARCHITECTURES $(ARCHS_STANDARD))
+set(CMAKE_OSX_SYSROOT "iphoneos")
+
+
 add_subdirectory(Sources)
 # add_subdirectory(demo)

@@ -1,0 +1,957 @@
+@charset "UTF-8";
+[|att] {
+    color: green;
+}
+
+span[hidden="hidden"] {
+    display: none;
+}
+
+p {
+    margin: 1.16667em;
+}
+
+@media screen and (min-width: 900px) {
+    article {
+        padding: 1rem 3rem;
+    }
+}
+
+@supports (transform-origin: 5% 5%) {
+    div {
+        display: grid;
+    }
+}
+
+@namespace prefix "XML-namespace-URL";
+@page :first {
+    margin: 2cm;
+}
+
+@viewport {
+    width: 100vw;
+}
+
+/* 背景图相关 */
+
+body.bground-image {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+/* 前言后记正文 */
+
+p.preface-text-30 {
+    margin: 1.16667em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+    margin-top: 30%;
+}
+
+span.bodycontent-yinwen {
+    font-family: '楷体', 'sans-serif', '黑体';
+    color: #B04D0B;
+}
+
+/* 下划线 */
+
+.xhx {
+    text-decoration: underline;
+}
+
+span.huaxian {
+    text-decoration: line-through;
+}
+
+/* 垂直居中 */
+
+div.vertical-middle {
+    tb-vertical-align: middle;
+}
+
+div.bg {
+    background: #D3D3D3;
+}
+
+/* 生僻字 */
+
+img.rarefont {
+    height: 1.1em;
+    vertical-align: -0.2em;
+    tb-image_color_mode: text;
+}
+
+/** 版权页相关 **/
+
+/* 版权容器 */
+
+.copyright {
+    tb-vertical-align: 45%;
+    tb-text-size-fixed: yes;
+    margin-top: 10%;
+}
+
+/* 版权标题 */
+
+h2.copyright-title {
+    margin: 0 0 0.375em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.77778em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-indent: 0;
+}
+
+/* 版权正文 */
+
+p.copyright-text {
+    margin: 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 0.88889em;
+    line-height: 1.75;
+    text-indent: 0;
+}
+
+/* 版权正文授权 */
+
+p.copyright-text-1 {
+    margin: 1em 0 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 0.88889em;
+    line-height: 1.75;
+    text-indent: 0;
+}
+
+/* 版权所有 */
+
+p.copyright-text-2 {
+    margin: 1em 0 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 0.88889em;
+    line-height: 1.75;
+    text-indent: 0;
+}
+
+/* 序言，前言相关 */
+
+/* 序言前言 */
+
+h2.preface {
+    margin: 30% 0 0.11111em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.11111em;
+    line-height: 1.2;
+    font-weight: normal;
+    text-indent: 0;
+    color: #B04D0B;
+    text-align: left;
+    /* 序言前言标题 */
+}
+
+h2.preface+h2.preface-title {
+    margin: 0 0 1.33333em 0;
+}
+
+/* 序言前言标题 */
+
+h2.preface-title {
+    margin: 30% 0 1.33333em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.77778em;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #B04D0B;
+    text-indent: 0;
+    text-align: left;
+}
+
+/* 前言内容-无缩进 */
+
+p.preface-none {
+    margin: 1.16667em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 0;
+}
+
+.bodycontent-left
+/**正文-居左*/
+
+    {
+    font-size: 1.0em;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    text-indent: 0em;
+    line-height: 1.25em;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+.bodycontent-kt-left
+/**正文-引文-居左*/
+
+    {
+    font-size: 0.8em;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    line-height: 1.25em;
+    padding-left: 2.0em;
+    padding-right: 2.0em;
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+/* 前言后记正文 */
+
+p.preface-text-c {
+    margin: 1.16667em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-align: center;
+    text-indent: 2em;
+}
+
+/* 前言后记正文下沉30*/
+
+p.preface-text-c-30 {
+    margin: 1.16667em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-align: center;
+    text-indent: 2em;
+    margin-top: 30%
+}
+
+/* 前言后记正文加粗 */
+
+p.preface-text-ht {
+    margin: 1.16667em 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+/* 章小标题 */
+
+h3.section {
+    margin: 30% 0 0 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #B04D0B;
+    text-align: left;
+}
+
+/* 正文内容 */
+
+p.bodycontent-c {
+    margin: 1.16667em 0;
+    font-size: 1em;
+    line-height: 1.61111;
+    text-align: center;
+    text-indent: 2em;
+}
+
+/** 1~5级标题相关 **/
+
+/* 一级标题 */
+
+h2.bodycontent-title-2 {
+    margin: 30% 0 0.75em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.77778em;
+    line-height: 1.5;
+    font-weight: normal;
+    text-indent: 0;
+    color: #B04D0B;
+    text-align: left;
+}
+
+/* 二级标题 */
+
+h3.bodycontent-title-3 {
+    margin: 1.16667em 0 -0.20833em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.33333em;
+    line-height: 1.16667;
+    font-weight: normal;
+    text-indent: 0;
+    color: #B04D0B;
+    text-align: left;
+    margin-top: 30%
+}
+
+/* 三级标题 */
+
+h4.bodycontent-title-4 {
+    margin: 1.09091em 0 -0.40909em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.22222em;
+    line-height: 1.27273;
+    font-weight: normal;
+    text-indent: 0;
+    color: #B04D0B;
+    text-align: left;
+}
+
+/* 四级标题 */
+
+h5.bodycontent-title-5 {
+    margin: 1.2em 0 -0.45em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.11111em;
+    line-height: 1.4;
+    font-weight: normal;
+    text-indent: 0;
+    color: #B04D0B;
+    text-align: left;
+}
+
+/* 五级标题 */
+
+h6.bodycontent-title-6 {
+    margin: -0.05556em 0 -0.72222em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.55556;
+    text-indent: 0;
+    font-weight: normal;
+}
+
+span.bodycontent-yinwen {
+    font-family: '楷体', 'sans-serif', '黑体';
+}
+
+/* 章，主，副，作者 多标题相关 */
+
+/* 章标题 */
+
+h2.chapter-title {
+    margin: 30% 0 0.1em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.11111em;
+    line-height: 1.2;
+    font-weight: normal;
+    text-indent: 0;
+    text-align: left;
+}
+
+/* 主标题 */
+
+h2.main-title {
+    margin: 0 0 0.125em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.77778em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-indent: 0;
+    text-align: left;
+    /* 副标题 */
+    /* 作者 */
+}
+
+h2.main-title+p.sub-title {
+    margin: 0 0 1.5em 0;
+}
+
+h2.main-title+p.author {
+    margin: 0 0 1.5em 0;
+}
+
+/* 主标题-top30 */
+
+h2.main-title-30 {
+    margin: 30% 0 0.125em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.77778em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-indent: 0;
+    text-align: left;
+    /* 副标题 */
+    /* 作者 */
+}
+
+h2.main-title-30+p.sub-title {
+    margin: 0 0 1.5em 0;
+}
+
+h2.main-title-30+p.author {
+    margin: 0 0 1.5em 0;
+}
+
+/* 副标题 */
+
+p.sub-title {
+    margin: 0 0 0.09375em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 0.88889em;
+    line-height: 1.5;
+    font-weight: normal;
+    text-indent: 0;
+    text-align: left;
+    /* 主标题 */
+}
+
+p.sub-title+h2.main-title {
+    margin: 0 0 0.75em 0;
+}
+
+/* 副标题-top30 */
+
+p.sub-title-30 {
+    margin: 30% 0 0.09375em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 0.88889em;
+    line-height: 1.5;
+    font-weight: normal;
+    text-indent: 0;
+    text-align: left;
+    /* 主标题 */
+}
+
+p.sub-title-30+h2.main-title {
+    margin: 0 0 0.75em 0;
+}
+
+/* 作者 */
+
+p.author {
+    margin: 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 0.88889em;
+    line-height: 1.5;
+    text-indent: 0;
+}
+
+/** 正文 **/
+
+/* 正文引言 */
+
+p.bodycontent-preface {
+    margin: 1.5625em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 0.88889em;
+    line-height: 1.8125;
+    text-indent: 0;
+}
+
+/* 正文引言-top30 */
+
+p.bodycontent-preface-30 {
+    margin: 30% 0 1.5625em;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 0.88889em;
+    line-height: 1.8125;
+    text-indent: 0;
+}
+
+/* 前言后记正文 */
+
+p.preface-text {
+    margin: 1.16667em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+/* 正文内容 */
+
+p.bodycontent {
+    margin: 1.16667em 0;
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+div.bodycontent {
+    margin: 1.16667em 0;
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+/* 正文内容 */
+
+p.bodycontent-b {
+    margin: 1.16667em 0;
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+    font-weight: bold;
+}
+
+/* 正文内容 */
+
+p.bodycontent-b-30 {
+    margin: 1.16667em 0;
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+    margin-top: 30%;
+    font-weight: bold;
+}
+
+/* 正文内容-无缩进 */
+
+p.bodycontent-none {
+    margin: 1.16667em 0;
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 0;
+}
+
+/* 正文内容-top30 */
+
+p.bodycontent-30 {
+    margin: 30% 0 1.16667em;
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+/* 正文内容-top30-无缩进 */
+
+p.bodycontent-30-none {
+    margin: 30% 0 1.16667em;
+    font-family: '黑体', 'sans-serif';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 0;
+}
+
+/* 正文内容-仿宋 */
+
+p.bodycontent-fs {
+    margin: 1.16667em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+/* 正文内容-仿宋-无缩进 */
+
+p.bodycontent-fs-none {
+    margin: 1.16667em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 0;
+}
+
+/* 正文内容-黑体 */
+
+p.bodycontent-ht {
+    margin: 1.16667em 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+/* 正文内容-黑体 */
+
+p.bodycontent-ht-c {
+    margin: 1.16667em 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-align: center;
+}
+
+/* 正文内容-黑体 */
+
+p.bodycontent-ht-30 {
+    margin: 1.16667em 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 1em;
+    line-height: 1.61111;
+    margin-top: 30%
+}
+
+/* 正文内容-黑体居中*/
+
+p.bodycontent-ht-ce {
+    margin: 1.16667em 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 1.1em;
+    line-height: 1.61111;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 正文内容-黑体-无缩进 */
+
+p.bodycontent-ht-none {
+    margin: 1.16667em 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 0;
+}
+
+/* 正文内容-楷体 */
+
+p.bodycontent-kt {
+    margin: 1.16667em 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+div.bodycontent-kt {
+    margin: 1.16667em 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+/* 正文内容-楷体 */
+
+p.bodycontent-kt-c-30 {
+    margin: 30% 0 1.16667em 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-align: center;
+}
+
+/* 正文内容 */
+
+p.bodycontent-r {
+    margin: 1.16667em 0;
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+    text-align: right;
+}
+
+p.bodycontent-kt-r {
+    margin: 1.16667em 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-align: right;
+}
+
+p.bodycontent-kt-r-30 {
+    margin: 1.16667em 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-align: right;
+    margin-top: 30%;
+}
+
+p.bodycontent-kt-c {
+    margin: 1.16667em 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-align: center;
+}
+
+/* 正文内容-楷体 */
+
+p.bodycontent-kt-30 {
+    margin: 30% 0 1.16667em 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+}
+
+/* 正文内容-楷体-无缩进 */
+
+p.bodycontent-kt-none {
+    margin: 1.16667em 0;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 0;
+}
+
+/* 注释弹窗 */
+
+span[tb-annotation="yes"] {
+    margin: 1.25em 1em 1em;
+    font-size: 0.77778em;
+    font-family: '黑体', 'sans-serif';
+    line-height: 1.42857;
+}
+
+/* 图独占 - 中 100%*/
+
+div.bodypic-c-100 {
+    width: 100%;
+    margin: 0.42857em auto;
+    text-align: center;
+}
+
+div.bodypic-c-100 img {
+    width: 100%;
+    display: block;
+    margin: 0 0 0.27273em 0;
+}
+
+/* 图独占 - 中 80%*/
+
+div.bodypic-c-80 {
+    margin: 0.55556% auto;
+    text-align: center;
+}
+
+div.bodypic-c-80 img {
+    width: 80%;
+    display: block;
+    margin: 0 auto 0.27273em auto;
+}
+
+/* 图独占 - 中 50%*/
+
+div.bodypic-c- {
+    margin: 0.55556% auto;
+    text-align: center;
+}
+
+div.bodypic-c-50 img {
+    width: 50%;
+    display: block;
+    margin: 0 auto 0.27273em auto;
+}
+
+/* 图独占 - 中 30%*/
+
+div.bodypic-c- {
+    margin: 0.55556% auto;
+    text-align: center;
+}
+
+div.bodypic-c-30 img {
+    width: 30%;
+    display: block;
+    margin: 0 auto 0.27273em auto;
+}
+
+/* 图独占 - 中 15%*/
+
+div.bodypic-c- {
+    margin: 0.55556% auto;
+    text-align: center;
+}
+
+div.bodypic-c-15 img {
+    width: 15%;
+    display: block;
+    margin: 0 auto 0.27273em auto;
+}
+
+/* 图绕排 - 左 45%*/
+
+div.bodypic-l-45 {
+    float: left;
+    width: 45%;
+    margin: 2.22222% 2.77778% 0;
+    text-align: center;
+}
+
+div.bodypic-l-45 img {
+    width: 100%;
+    display: block;
+    margin: 0 0 0.27273em 0;
+}
+
+/* 图绕排 - 右 45%*/
+
+div.bodypic-r-45 {
+    float: right;
+    width: 45%;
+    margin: 2.22222% 2.77778% 0;
+    text-align: center;
+}
+
+div.bodypic-r-45 img {
+    width: 100%;
+    display: block;
+    margin: 0 0 0.27273em 0;
+}
+
+/* 图独占 垂直居中 */
+
+div.bodypic-m {
+    tb-vertical-align: middle;
+}
+
+div.bodypic-m img {
+    width: 100%;
+    display: block;
+    margin: 0 0 0.27273em 0;
+}
+
+/* 图片描述-居中 */
+
+p.imgdescript-c {
+    margin: 0 0 1.66667em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 0.66667em;
+    line-height: 1.83333;
+    text-align: center;
+}
+
+/* 图片描述-居左 */
+
+p.imgdescript-l {
+    margin: 0 0 1.66667em;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 0.66667em;
+    line-height: 1.83333;
+    text-align: left;
+}
+
+/* 图片标题-居左 */
+
+p.imgtitle-l {
+    margin: 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 0.77778em;
+    line-height: 1.57143;
+    text-align: left;
+}
+
+p.imgtitle-l+p.imgdescript-l, p.imgtitle-l+p.imgdescript-c {
+    margin: 0.16667em 0 1.66667em;
+}
+
+/* 图片标题-居中 */
+
+p.imgtitle-c {
+    margin: 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 0.77778em;
+    line-height: 1.57143;
+    text-align: center;
+}
+
+p.imgtitle-c+p.imgdescript-l, p.imgtitle-c+p.imgdescript-c {
+    margin: 0.16667em 0 1.66667em;
+}
+
+/* 图片标题-居中 */
+
+p.imgtitle-r {
+    margin: 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 0.77778em;
+    line-height: 1.57143;
+    text-align: right;
+}
+
+p.imgtitle-c+p.imgdescript-l, p.imgtitle-c+p.imgdescript-c {
+    margin: 0.16667em 0 1.66667em;
+}
+
+/* 前言后记正文 */
+
+p.preface-text-r {
+    margin: 1.16667em 0;
+    font-family: '仿宋', '宋体', 'serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 2em;
+    text-align: right;
+}
+
+/** 章节相关 **/
+
+/* 章小标题 */
+
+h2.section {
+    margin: 30% 0 0 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.11111em;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #B04D0B;
+    text-align: left;
+}
+
+/* 章主标题 */
+
+h3.section-title {
+    margin: 0.0625em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.6em;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #B04D0B;
+    text-align: left;
+}
+
+/* 章主标题 */
+
+h2.section-title {
+    margin: 0.0625em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.77778em;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #B04D0B;
+    text-align: left;
+}
+
+/* 章副标题 */
+
+h6.section-subtitle {
+    margin: 0.36364em 0;
+    font-family: '宋体', 'serif', '黑体';
+    font-size: 1.22222em;
+    line-height: 1.36364;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* 章文 */
+
+p.section-text {
+    margin: 0.71429em 0;
+    font-family: '黑体', 'sans-serif';
+    font-size: 0.77778em;
+    line-height: 2;
+    text-indent: 0;
+}
+
+/*图片落款*/
+
+div.bodypic-r-35 {
+    margin: 0.55556% auto;
+    text-align: right;
+}
+
+div.bodypic-r-35 img {
+    width: 35%;
+    display: block;
+    margin: 0 0 0.27273em auto;
+}
+
+/*独句*/
+
+p.bodycontent-kt1 {
+    margin: 50% auto;
+    font-family: '楷体', 'sans-serif', '黑体';
+    font-size: 1em;
+    line-height: 1.61111;
+    text-indent: 0em;
+    text-align: center;
+}
+
+/*# sourceMappingURL=Style0001.css.map */
