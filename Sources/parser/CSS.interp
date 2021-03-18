@@ -132,7 +132,7 @@ rule names:
 stylesheet
 charset
 imports
-g_namespace
+namespace_
 namespacePrefix
 media
 mediaQueryList
@@ -157,7 +157,7 @@ functionalPseudo
 expression
 negation
 negationArg
-g_operator
+operator_
 property
 ruleset
 declarationList
@@ -178,7 +178,7 @@ atRule
 atKeyword
 unused
 block
-nestedStatement
+statement
 groupRuleBody
 supportsRule
 supportsCondition

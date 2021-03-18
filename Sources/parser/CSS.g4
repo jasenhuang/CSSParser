@@ -6,7 +6,7 @@ grammar CSS;
 // IE and vendor specific rules are added for real world usage
 
 stylesheet
-    : ws ( charset ( Comment | Space | Cdo | Cdc )* )* ( imports ( Comment | Space | Cdo | Cdc )* )* ( g_namespace ( Comment | Space | Cdo | Cdc )* )* ( statement ( Comment | Space | Cdo | Cdc )* )*
+    : ws ( charset ( Comment | Space | Cdo | Cdc )* )* ( imports ( Comment | Space | Cdo | Cdc )* )* ( namespace_ ( Comment | Space | Cdo | Cdc )* )* ( statement ( Comment | Space | Cdo | Cdc )* )*
     ;
 
 charset
@@ -23,7 +23,7 @@ imports
 
 // Namespaces
 // https://www.w3.org/TR/css-namespaces-3/
-g_namespace
+namespace_
     : Namespace ws (namespacePrefix ws)? ( String | Uri ) ws ';' ws    # goodNamespace
     | Namespace ws (namespacePrefix ws)? ( String | Uri ) ws           # badNamespace
     ;
@@ -146,7 +146,7 @@ negationArg
     ;
 
 // Rules
-g_operator
+operator_
     : '/' ws      # goodOperator
     | Comma ws    # goodOperator
     | Space ws    # goodOperator
@@ -183,7 +183,7 @@ value
     ;
 
 expr
-    : term ( g_operator? term )*
+    : term ( operator_? term )*
     ;
 
 term

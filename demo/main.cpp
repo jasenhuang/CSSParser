@@ -33,5 +33,7 @@ int main(int , const char **) {
     
     std::cout << tree->toStringTree(&parser) << std::endl << std::endl;
 
+    tree::ParseTreeWalker::DEFAULT.walk(&listener, tree);
+
     return 0;
 }
