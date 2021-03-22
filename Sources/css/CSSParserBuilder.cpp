@@ -22,3 +22,20 @@
 #include "CSSParserBuilder.h"
 #include "CSSLexer.h"
 #include "CSSParser.h"
+#include "CSSRule.h"
+#include "CSSSelector.h"
+#include "CSSValue.h"
+#include "CSSValueList.h"
+#include "CSSStyleSheet.h"
+
+
+CSSParserBuilder::CSSParserBuilder(){
+
+}
+
+CSSParserBuilder::~CSSParserBuilder() {
+
+}
+
+
+

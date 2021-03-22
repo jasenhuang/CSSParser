@@ -44,7 +44,7 @@ if(CMAKE_SYSTEM_NAME MATCHES "Linux")
   pkg_check_modules(UUID REQUIRED uuid)
 endif()
 if(APPLE)
-  find_library(COREFOUNDATION_LIBRARY CoreFoundation)
+find_library(COREFOUNDATION_LIBRARY CoreFoundation)
 endif()
 
 file(STRINGS "VERSION" ANTLR_VERSION)
@@ -68,7 +68,7 @@ endif(WITH_DEMO)
 if(MSVC_VERSION)
   set(MY_CXX_WARNING_FLAGS "  /W4")
 else()
-  set(MY_CXX_WARNING_FLAGS "  -Wall -pedantic -W")
+  set(MY_CXX_WARNING_FLAGS "  -Wall -pedantic -W -Wunknown-pragmas")
 endif()
 
 # Define USE_UTF8_INSTEAD_OF_CODECVT macro.

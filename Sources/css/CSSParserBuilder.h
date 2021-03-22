@@ -20,13 +20,13 @@
  */
 
 
-#include "CSSParserBuilder.h"
+#include <string>
 
 
 class CSSParserBuilder {
 public:
-    CSSParserBuilder();
+    explicit CSSParserBuilder();
     ~CSSParserBuilder();
 
     
-}
+};

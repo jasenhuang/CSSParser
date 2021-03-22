@@ -1,3 +1,12 @@
+# !/bin/bash
+
+mkdir -p Android
+cd Android
+
+function() {
+    ARCH = $1
+}
+
 cmake -G Ninja \
 -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK}/build/cmake/android.toolchain.cmake \
 -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a \
